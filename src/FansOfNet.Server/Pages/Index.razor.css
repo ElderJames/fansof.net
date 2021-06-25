@@ -1,0 +1,23 @@
+﻿.jumbotron {
+  background: #7014e8;
+  background-image: url(https://dotnet.microsoft.com/static/images/redesign/home-hero-bg.svg);
+  background-image: url(https://dotnet.microsoft.com/static/images/redesign/home-hero-bg.svg),linear-gradient( 180deg,#7014e8 30.12%,#0e5ecf 192.47%);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+  .jumbotron .btn-purple {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    font-family: "Segoe UI Semibold","Segoe UI",Helvetica,Arial,sans-serif;
+  }
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
