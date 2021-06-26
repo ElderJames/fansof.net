@@ -1,0 +1,27 @@
+﻿@page "/"
+@namespace FansOfNet.Server.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.NET 爱好者社区</title>
+    <base href="~/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="FansOfNet.Web.styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="dotnet-logo.png">
+</head>
+<body>
+    <component type="typeof(FansOfNet.Web.App)" render-mode="WebAssemblyPrerendered" />
+
+    <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+</html>
