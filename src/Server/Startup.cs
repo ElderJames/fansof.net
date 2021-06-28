@@ -39,6 +39,7 @@ namespace FansOfNet.Server
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddIdentityServer()
+                .AddDeveloperSigningCredential(true, "./tempkey.rsa")
                 .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
 
             services.AddAuthentication()
